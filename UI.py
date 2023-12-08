@@ -8,7 +8,6 @@ import time
 import base64
 import sklearn
 from sklearn.ensemble import RandomForestClassifier
-import nltk
 import sklearn
 from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder, StandardScaler
 
@@ -31,7 +30,7 @@ page_bg_img = f"""
 [data-testid="stAppViewContainer"] > .main {{
 background-image: url("data:image/png;base64,{img_background}");
 background-size: 100%;
-background-repeat: no-repeat;
+background-repeat: repeat-y;
 background-position: center;
 background-position: top left; /*center*/
 background-repeat: no-repeat;
