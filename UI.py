@@ -33,7 +33,6 @@ background-size: 100%;
 background-repeat: repeat-y;
 background-position: center;
 background-position: top left; /*center*/
-background-repeat: no-repeat;
 background-attachment: local;  /*fixed*/
 }}
 
