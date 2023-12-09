@@ -152,6 +152,7 @@ with col4:
       df2 = transformer.transform(df)
       prediction = model.predict(df2)
       probability = model.predict_proba(df2)
+      probability = probability[0][1]*100,1
       if prediction==0:
           prediction = "Stay"
           time.sleep(0.9)
@@ -159,7 +160,7 @@ with col4:
       else:
           prediction = "Lift"
       st.text("The chance is : {} ".format(prediction))
-      st.text("The probability is : %{:.1f} ".format(probability[0][1]*100,1))
+      st.text("The probability is : %{:.1f} ".format(probability))
 
 #st.text(df.head())
 st.sidebar.header("Created by:\nRuwaidiah   \nRawan   \nSara   \nShuruq   \nLujain   \nAhmed   \nMariam   \nFatima   \nRenad")
