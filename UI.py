@@ -161,7 +161,7 @@ with col4:
           time.sleep(0.9)
           st.balloons()
       st.text("The chance is : {} ".format(prediction))
-      st.text("The probability is : %{:.1f} ".format(prob[0]))
+      st.text("The probability is : %{:.1f} ".format(prob[1]))
       st.text("The probability is : %{} ".format(probability))
       
 st.sidebar.header("Created by:\nRuwaidiah   \nRawan   \nSara   \nShuruq   \nLujain   \nAhmed   \nMariam   \nFatima   \nRenad")
