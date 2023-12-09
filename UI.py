@@ -159,9 +159,12 @@ with col4:
           st.balloons()
       else:
           prediction = "Lift"
+      if prob[0]<20:
+          time.sleep(0.9)
+          st.balloons()
       st.text(prob[0])
       st.text("The chance is : {} ".format(prediction))
-      #st.text("The probability is : %{:.1f} ".format(probability))
+      st.text("The probability is : %{:.1f} ".format(prob[0]))
 
 #st.text(df.head())
 st.sidebar.header("Created by:\nRuwaidiah   \nRawan   \nSara   \nShuruq   \nLujain   \nAhmed   \nMariam   \nFatima   \nRenad")
