@@ -155,14 +155,11 @@ with col4:
       prob = probability[0][1]*100,1
       if prediction==0:
           prediction = "Stay"
-          time.sleep(0.9)
-          st.balloons()
       else:
           prediction = "Lift"
       if prob[0]<20:
           time.sleep(0.9)
           st.balloons()
-      st.text(prob[0])
       st.text("The chance is : {} ".format(prediction))
       st.text("The probability is : %{:.1f} ".format(prob[0]))
 
