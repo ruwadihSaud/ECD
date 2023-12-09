@@ -159,7 +159,7 @@ with col4:
           st.balloons()
       else:
           prediction = "Lift"
-      st.text(prob)
+      st.text(prob[0])
       st.text("The chance is : {} ".format(prediction))
       #st.text("The probability is : %{:.1f} ".format(probability))
 
