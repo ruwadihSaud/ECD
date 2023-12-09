@@ -159,7 +159,7 @@ with col4:
       else:
           prediction = "Lift"
       st.text("The chance is : {} ".format(prediction))
-      st.text("The probability is : {} ".format(probability[0][1]*100,1))
+      st.text("The probability is : %{:.3f} ".format(probability[0][1]*100,1))
 
 #st.text(df.head())
 st.sidebar.header("Created by:\nRuwaidiah   \nRawan   \nSara   \nShuruq   \nLujain   \nAhmed   \nMariam   \nFatima   \nRenad")
