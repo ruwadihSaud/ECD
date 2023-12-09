@@ -118,7 +118,7 @@ with col2:
     Salary = st.selectbox("**Select Salary level of employee**", ('high', 'medium', 'low'))
 
 
-col3,col4,col5 = st.columns(3)
+col3,col4,col5 = st.columns([2, 4, 2])
 
 
 with col4:
