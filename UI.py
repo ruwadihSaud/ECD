@@ -14,7 +14,7 @@ from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder, StandardScaler
 
 
 st.set_page_config(page_title="EC", page_icon="logo.png", layout="centered", initial_sidebar_state="auto", menu_items=None)
-
+st.session_state.theme = "light"
 @st.cache_data
 def get_img_as_base64(file):
     with open(file, "rb") as f:
